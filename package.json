@@ -1,0 +1,24 @@
+{
+  "name": "JSMeanAngularNodeRest_PoC",
+  "version": "1.0.0",
+  "description": "Angular and Node Proof of Concept based on Rest api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "express",
+    "rest"
+  ],
+  "author": "Laszlo Barabas",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-cli": "^0.1.2",
+    "karma-junit-reporter": "^0.4.2",
+    "karma-htmlfile-reporter": "^0.2.2"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+
+	<title>Starter Node and Angular</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<!-- link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+	<script src="libs/angular-resource/angular-resource.min.js"></script>
+	<script src="libs/angular-mocks/angular-mocks.js"></script>
+
+
+	<!-- ANGULAR CUSTOM -->
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers/DemoListController.js"></script>
+	<script src="js/services/RestDemoListRESTCalls.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="DemoListController">
+<div class="container">
+	
+	<!-- HEADER -->
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/"> Node and Angular</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li>Valami A </li>
+			<li>Valami B </li>
+		</ul>
+	</nav>
+
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<p> {{ demoline }}  </p>
+
+
+	<label > Number between : 1--99
+		<input type="number" name="input" ng-model="value" min="1" max="99" required>
+
+	</label>
+
+	<button ng-click="buttonCall()"  id="callbutton">Push for Call</button>
+	<button ng-click="restCall()" id="restbutton">Push for RestCall</button>
+
+    <p>The call result is  {{callresult}} !</p>
+	<p>The REST result is  {{restresult}} !</p>
+
+</div>
+</body>
+</html>
+
